@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile_v1
+    image: 372552586046.dkr.ecr.us-west-1.amazonaws.com/official-website:v0.1
+    container_name: OfficialWebsite
+    restart: always
+    ports:
+      - 3000:3000
+networks:
+  default:
+    name: coinstart_default
