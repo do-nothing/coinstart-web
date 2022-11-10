@@ -32,7 +32,9 @@ export default function IntroSection() {
         <div className="install">
           <button><img src="/icon-apple.png" alt="icon-apple"  /> App Store</button>
           <button><img src="/icon-play-store.png" alt="icon-play-store"  />Play Store</button>
+          <a href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh" target="_blank" rel="noreferrer">
           <button><img src="/icon-chrome.png" alt="icon-chrome"  />Chrome</button>
+          </a>
         </div>
         <div className="social">
           <a href="https://twitter.com/coinstartwallet" target="_blank" rel="noreferrer">
