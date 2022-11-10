@@ -13,7 +13,7 @@ export default function FeaturesMobile() {
 
   features.forEach((e, i) => {
     'bcdefg'.split('').forEach((k/* a,b,c */) => {
-      const key = `features.feature${i}${k}`; // features.feature1b'
+      const key = `features.feature${i+1}${k}`; // features.feature1b'
       const res = t(key);
       if (res !== key) {
         e.desc.push(res);
