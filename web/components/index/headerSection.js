@@ -103,7 +103,10 @@ export default function HeaderSection(){
               <p>English</p>
             </div>
             <div className="option" onClick={()=>{changeLanguage('ch');}}>
-              <p>中文</p>
+              <p>简体中文</p>
+            </div>
+            <div className="option" onClick={()=>{changeLanguage('hk');}}>
+              <p>繁体中文</p>
             </div>
             <div className="option" onClick={()=>{changeLanguage('jp');}}>
               <p>日本語</p>

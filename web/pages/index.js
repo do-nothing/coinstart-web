@@ -13,6 +13,7 @@ import en from '../locales/en';
 import rus from '../locales/rus';
 import ch from '../locales/ch';
 import jp from '../locales/jp';
+import hk from '../locales/hk';
 import {I18nextProvider} from 'react-i18next';
 import i18next from 'i18next';
 
@@ -27,6 +28,9 @@ export default function Home() {
       },
       ch: {
         common: ch
+      },
+      hk: {
+        common: hk
       },
       jp: {
         common: jp
