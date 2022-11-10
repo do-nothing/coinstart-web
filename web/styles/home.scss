@@ -52,6 +52,10 @@ html, body {
     padding-top: 100px;
   }
 
+  main > section {
+    color: var(--text-color)
+  }
+
   header {
     position: fixed;
     background: var(--bg-color);
@@ -294,7 +298,7 @@ html, body {
       margin-bottom: 20px;
     }
 
-    #desc {
+    .text-desc {
       font-size: 20px;
       font-weight: normal;
       line-height: 34px;
@@ -488,7 +492,7 @@ html, body {
       .menu {
         display: flex;
         .global-btn {
-          margin-right: .25rem
+          margin-right: .75rem
         }
         .global-btn div {
           width: 6vw;

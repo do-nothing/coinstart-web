@@ -24,11 +24,9 @@ export default{
     feature2c: '千人群聊 Coinstart App 将有可以容纳千人万人的群组功能，方便用户组织各种任务及兴趣的群组',
     feature3a:'CoinStart DApp 市场',
     feature3b:'一分钟就能上手使用的 DApp 市场, 支持一键启动Gamefi, Defi , 让用户快速简单的使用去中心化应用，并让发行方快速的接触到百万级的用户。Easy, fun and reliably rewarding! ',
-    feature4a: 'SUI and APTOS Next generation of Blockchain',
+    feature4a: 'CoinStart Gamefi NFT platform on Sui',
     feature4b: '我们有ＳＵＩ生态系独立的ＮＦＴ交易平台，玩家可以简单的保存游戏中的ＮＦＴ，并支持各种ＳＵＩ链上的资产交易兑换',
-    feature5a: 'CoinStart GameFi NFT Platform on Sui',
-    feature5b: 'A platform that allows users to play different casual games under one roof.',
-    feature5c: '我们有ＳＵＩ生态系独立的ＮＦＴ交易平台，玩家可以简单的保存游戏中的ＮＦＴ，并支持各种ＳＵＩ链上的资产交易兑换。',
-
+    feature5a: '全球匯款',
+    feature5b: '從您的錢包發送和接收即時和安全的無邊界付款，無需額外費用。紅包功能可用。',
   }
 };

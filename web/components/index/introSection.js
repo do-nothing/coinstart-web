@@ -33,7 +33,7 @@ export default function IntroSection() {
           <button><img src="/icon-apple.png" alt="icon-apple"  /> App Store</button>
           <button><img src="/icon-play-store.png" alt="icon-play-store"  />Play Store</button>
           <a href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh" target="_blank" rel="noreferrer">
-          <button><img src="/icon-chrome.png" alt="icon-chrome"  />Chrome</button>
+            <button><img src="/icon-chrome.png" alt="icon-chrome"  />Chrome</button>
           </a>
         </div>
         <div className="social">
@@ -51,8 +51,8 @@ export default function IntroSection() {
       </section>
       <section key="sec2">
         <p id="title">{t('intro.title2')}</p>
-        <p key="subtitle2">{t('intro.subtitle2')}</p>
-        <p key="subtitle3">{t('intro.subtitle3')}</p>
+        <p key="subtitle2" className='text-desc'>{t('intro.subtitle2')}</p>
+        <p key="subtitle3" className='text-desc'>{t('intro.subtitle3')}</p>
       </section>
     </>
   );
