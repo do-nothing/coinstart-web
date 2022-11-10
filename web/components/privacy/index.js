@@ -2,10 +2,12 @@ import styles from './privacy.module.scss';
 
 const Privacy = () => (
   <div className={styles['p-privacy']}>
-    <h1 className={styles['p-privacy-h1']}>Effective date: May 7th, 2021</h1>
+    <h1 className={styles['p-privacy-h1']}>Effective date: Nov 7th, 2022</h1>
     <section className={styles['p-privacy-section']}>
-      Phantom Technologies, Inc. (“we”, “us” or “our”) values your privacy. In this Privacy Policy (“Policy”), we describe how we collect, use, and disclose information that we obtain about visitors to our website at https://coinstart.io/ (the “Site”) and the services available through our Site, including any mobile applications and browser extensions (collectively, the “Services”), and how we use and disclose that information.
-
+      Coinstart, Inc. (“we”, “us” or “our”) values your privacy. In this Privacy Policy (“Policy”), we describe how we collect, use, and disclose information that we obtain about visitors to our website at https://coinstart.io/ (the “Site”) and the services available through our Site, including any mobile applications and browser extensions (collectively, the “Services”), and how we use and disclose that information.
+    </section>
+    
+    <section className={styles['p-privacy-section']}>
       By visiting the Site, or using any of our Services, you agree that your personal information will be handled as described in this Policy. Your use of our Site or Services, and any dispute over privacy, is subject to this Policy (including any applicable changes) and an applicable Terms of Use, including its applicable limitations on damages and provisions for the resolution of disputes.
     </section>
 
