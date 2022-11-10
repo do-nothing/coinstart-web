@@ -14,7 +14,7 @@ export default () => {
     // const ons = refOns.current;
     // ons.notification.alert('devloping... wait a moment', { title: 'unsupported' });
         
-    location.assign('/walletmobile');
+    location.assign('');
   }, [refOns.current]);
 
   return { openWallet };

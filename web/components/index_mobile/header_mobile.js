@@ -12,7 +12,7 @@ const download = () => {
     appMarket = 'https://www.apple.com.cn/store';
   } else if (ua.indexOf('Windows NT' > -1)) {
     // platform = 'win';
-    appMarket = 'https://chrome.google.com/webstore/category/extensions?hl=zh';
+    appMarket = 'https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh';
   }
 
   location.assign(appMarket);
@@ -94,7 +94,7 @@ export default function HeaderMobile() {
               <li><a href="#">Dapp</a></li>
               <li><a href="#">Institude</a></li>
               <li><a href="#">OPEN</a></li>
-              <li><a href="https://coinstart.io/walletmobile/">{t('header.connect')}</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh">{t('header.connect')}</a></li>
             </ul>
           </>
         )}

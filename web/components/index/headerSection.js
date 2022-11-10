@@ -90,7 +90,7 @@ export default function HeaderSection(){
         </nav>
 
         <div className="flex-1"></div>
-        <a href="https://coinstart.io/wallet/" target="_blank" rel="noreferrer">
+        <a href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh" target="_blank" rel="noreferrer">
           <button>{t('header.connect')}</button>
         </a>
         <a href="#" className="icon-button">
