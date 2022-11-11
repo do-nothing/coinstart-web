@@ -10,11 +10,13 @@ $break_phone_b: 668px;
 $break_phone_s: 450px;
 $break_phone_ss: 300px;
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 html, body {
   min-width: 100vw;
   min-height: 125vh;
   background: var(--bg-color);
-  font-family:"Roboto" ;
+  font-family:"Montserrat" ;
 }
 
 .mobile {
@@ -107,11 +109,26 @@ html, body {
       height: 22px;
       margin-left: 22px;
       cursor: pointer;
+      vertical-align: middle;
     }
 
     .icon-button img {
       height: 22px;
-      margin-left: 22px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .download-wrapper {
+      margin-left: 15px;
+      display: inline-block;
+      background-color: #8A38F5;
+      color: #ffffff;
+      padding: 8px 20px;
+      border-radius: 7px;
+      img {
+        vertical-align: text-top;
+        margin-left: 15px;
+      }
     }
 
     .dropdown {

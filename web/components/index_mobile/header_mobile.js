@@ -76,7 +76,8 @@ export default function HeaderMobile() {
           <ul>
             <li><a href="#">{t('header.Choose Language')}</a></li>
             <li><a onClick={() => { changeLanguage('en'); }}>English</a></li>
-            <li><a onClick={() => { changeLanguage('ch'); }}>中文</a></li>
+            <li><a onClick={() => { changeLanguage('ch'); }}>简体中文</a></li>
+            <li><a onClick={() => { changeLanguage('hk'); }}>繁体中文</a></li>
             <li><a onClick={() => { changeLanguage('jp'); }}>日本語</a></li>
             <li><a onClick={() => { changeLanguage('rus'); }}>Pyсский</a></li>
           </ul>

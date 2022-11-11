@@ -86,15 +86,21 @@ export default function HeaderSection(){
           <a href="#">Gamefi</a>
           <a href="#">Dapp</a>
           <a href="#">Institude</a>
-          <a href="#">OPEN</a>
+          <a href="#">Adapter</a>
         </nav>
 
         <div className="flex-1"></div>
-        <a href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh" target="_blank" rel="noreferrer">
+        {/* <a href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh" target="_blank" rel="noreferrer">
           <button>{t('header.connect')}</button>
-        </a>
+        </a> */}
         <a href="#" className="icon-button">
-          <img src="/icon-download.png" alt="icon-download" />
+          <img src="/icon-twitter.png" alt="" />
+          <img src="/icon-discord.png" alt="" />
+          <img src="/icon-telegram.png" alt="" />
+          <div className="download-wrapper">
+            {t('header.Download')}
+            <img src="/icon-download.png" alt="icon-download" />
+          </div>
         </a>
         <div className="dropdown">
           <img src="/icon-translate.png" alt="icon-translate" id="translate-button" />

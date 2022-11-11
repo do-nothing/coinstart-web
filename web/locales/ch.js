@@ -2,7 +2,7 @@ export default{
   header:{
     connect:'连接钱包',
     'Choose Language': '语言选择：',
-    Download: '下载钱包',
+    Download: '下载',
   },
   intro: {
     'Go-wallet': '打开钱包',
