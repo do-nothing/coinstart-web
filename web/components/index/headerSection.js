@@ -81,7 +81,7 @@ export default function HeaderSection(){
         <div className="flex-1"></div>
 
         <nav>
-          <a href="https://coinstart.io/wallet/">Wallet</a>
+          <a href="#">Wallet</a>
           <a href="#">SWAP</a>
           <a href="#">Gamefi</a>
           <a href="#">Dapp</a>
