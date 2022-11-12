@@ -1,11 +1,12 @@
 export default {
+  'Connect Wallet': 'Connect Wallet',
   header:{
     connect:'Connect Wallet',
     'Choose Language': 'Choose Language',
     Download: 'Download',
   },
   intro: {
-    title: 'CoinStart Sui wallet',
+    title: 'Sui based Web3 wallet',
     'Go-wallet': 'Go wallet',
     subtitle: 'Your Portal to crypto world, safe & easy for you to store, buy, send, receive, swap tokens and collect NFTs.',
     desc1: 'Safe storage of crypto currencies - Protect your assets on the go with the convenience you expect.',
@@ -29,6 +30,5 @@ export default {
     feature5a: 'CoinStart GameFi Platform and NFT Exchange trading Function',
     feature5b: 'A platform that allows users to play different casual games under one roof.',
     feature5c: 'Ａ vertical NFT trading platform for games will be established on Sui. Provide a place for gamers on Sui to trade NFT about Such as game props. ',
-
   },
 };

@@ -6,7 +6,7 @@ export default {
   },
   intro: {
     'Go-wallet': 'Go wallet',
-    title: 'CoinStart Sui wallet',
+    title: 'Sui based Web3 wallet',
     subtitle: '安全で簡単に保管、購入、送信、受信、Gamefi遊ぶ、トークンの交換、NFT の収集ができる暗号世界へのポータル。',
     desc1: '暗号通貨の安全な保管 - 資産を保護し、期待どおりの利便性を提供します。',
     desc2: 'Coinstart はSUINETWORK中心,、NFT、DeFi、DAOを探索するために７０種類ブロックチェーンに対応した仮想通貨ウォレットです。',

@@ -6,7 +6,7 @@ export default{
   },
   intro: {
     'Go-wallet': '打開錢包',
-    title: 'CoinStart Sui 錢包',
+    title: 'Sui based Web3 錢包',
     subtitle: 'Coinstart 錢包是你最安全便捷的加密世界入口，你可以很方便儲存，購買，接受，交易兌換加密貨幣，多鏈的聚合 NFT 市場，Defi, Gamefi平臺',
     desc1:'安全存儲加密數字貨幣，資產自我掌控，屬於你的專屬數字資產銀行',
     desc2:'支持 70+ 主鏈，探索Gamefi NFT、DeFi、DAO ',

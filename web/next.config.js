@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   output: 'standalone',
   eslint: {
@@ -5,4 +7,8 @@ module.exports = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  webpack: (config) => {
+    config.resolve.alias["@"] = path.resolve(__dirname)
+    return config
+  }
 };

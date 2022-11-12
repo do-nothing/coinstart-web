@@ -7,8 +7,8 @@ export default function FeaturesSection() {
     { img: '/start_id.png',    title: `${t('features.feature1a')}`, desc: [] },
     { img: '/social-chat.png', title: `${t('features.feature2a')}`, desc: [], },
     { img: '/dapps.png',       title: `${t('features.feature3a')}`, desc: [] },
-    { img: '/digital_wallet_646x663.png', title: `${t('features.feature4a')}`, desc: [] },
-    { img: '/nft_games.png',   title: `${t('features.feature5a')}`, desc: [] },
+    { img: '/home/fet-4-aptos.png', title: `${t('features.feature4a')}`, desc: [] },
+    { img: '/home/fet-5-gamefi.png',   title: `${t('features.feature5a')}`, desc: [] },
   ];
 
   features.forEach((e, i) => {
@@ -20,7 +20,6 @@ export default function FeaturesSection() {
       }
     });
   });
-
 
   return (
     <>
