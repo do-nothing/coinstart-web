@@ -39,7 +39,7 @@ export default function IntroSection(props) {
             &#x2000;
             {t('Chrome')}
           </a>
-          <a className="cst-button cst-btn-ghost btn-top-down-s" href="https://coinstart.io/wallet/">{t('Desktop')}</a>
+          <a className="cst-button cst-btn-ghost btn-top-down-s" href="https://coinstart.io/wallet">{t('Desktop')}</a>
           <button className="cst-button cst-btn-ghost btn-top-down-s" onClick={onDownload}>{t('Download')}</button>
           {/* <button><img src="/icon-apple.png" alt="icon-apple"  /> App Store</button>
           <button><img src="/icon-play-store.png" alt="icon-play-store"  />Play Store</button>
