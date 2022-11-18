@@ -1,0 +1,26 @@
+{
+    "family": "web-test",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::372552586046:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "web-test",
+            "image": "372552586046.dkr.ecr.us-west-1.amazonaws.com/official-website:v0.1",
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "entryPoint": [],
+            "command": []
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
