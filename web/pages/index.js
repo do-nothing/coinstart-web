@@ -19,47 +19,51 @@ import hk from '../locales/hk';
 import * as appDownPack from '../locales/appDownPack'
 import {I18nextProvider} from 'react-i18next';
 import i18next from 'i18next';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+
+i18next.init({
+  interpolation: { escapeValue: false },  // React already does escaping
+  lng: 'en',                              // language to use
+  resources: {
+    en: {
+      common: en, // 'common' is our custom namespace
+      'dl-android': appDownPack.en.android,
+      'dl-ios': appDownPack.en.ios,
+      'dl-chrome': appDownPack.en.chrome,
+    },
+    ch: {
+      common: ch,
+      'dl-android': appDownPack.ch.android,
+      'dl-ios': appDownPack.ch.ios,
+      'dl-chrome': appDownPack.ch.chrome,
+    },
+    hk: {
+      common: hk,
+      'dl-android': appDownPack.hk.android,
+      'dl-ios': appDownPack.hk.ios,
+      'dl-chrome': appDownPack.hk.chrome,
+    },
+    jp: {
+      common: jp,
+      'dl-android': appDownPack.jp.android,
+      'dl-ios': appDownPack.jp.ios,
+      'dl-chrome': appDownPack.jp.chrome,
+    },
+    rus: {
+      common: rus,
+      'dl-android': appDownPack.ru.android,
+      'dl-ios': appDownPack.ru.ios,
+      'dl-chrome': appDownPack.ru.chrome,
+    },
+  },
+});
 
 export default function Home() {
   const [dlVisible, setDlVisible] = useState(false)
   const [localLocale] = useLocalStorageState('defiport_locale', {defaultValue: 'en'});
-  i18next.init({
-    interpolation: { escapeValue: false },  // React already does escaping
-    lng: localLocale,                              // language to use
-    resources: {
-      en: {
-        common: en, // 'common' is our custom namespace
-        'dl-android': appDownPack.en.android,
-        'dl-ios': appDownPack.en.ios,
-        'dl-chrome': appDownPack.en.chrome,
-      },
-      ch: {
-        common: ch,
-        'dl-android': appDownPack.ch.android,
-        'dl-ios': appDownPack.ch.ios,
-        'dl-chrome': appDownPack.ch.chrome,
-      },
-      hk: {
-        common: hk,
-        'dl-android': appDownPack.hk.android,
-        'dl-ios': appDownPack.hk.ios,
-        'dl-chrome': appDownPack.hk.chrome,
-      },
-      jp: {
-        common: jp,
-        'dl-android': appDownPack.jp.android,
-        'dl-ios': appDownPack.jp.ios,
-        'dl-chrome': appDownPack.jp.chrome,
-      },
-      rus: {
-        common: rus,
-        'dl-android': appDownPack.ru.android,
-        'dl-ios': appDownPack.ru.ios,
-        'dl-chrome': appDownPack.ru.chrome,
-      },
-    },
-  });
+  useEffect(() => {
+    i18next.changeLanguage(localLocale)
+  }, [localLocale])
 
   const onDownload = useCallback(() => {
     setDlVisible(true)
@@ -74,22 +78,22 @@ export default function Home() {
       <div className="home pc">
         <HeaderSection onDownload={onDownload} />
         <main>
-          <IntroSection onDownload={onDownload}/>
+          <IntroSection onDownload={onDownload} />
           <CryptoSection/>
           <FeaturesSection/>
         </main>
         <FooterSection/>
-        <DownloadDialog visible={dlVisible} onClose={onClose} />
       </div>
       <div className="home mobile">
-        <HeaderMobile/>
+        <HeaderMobile />
         <main>
-          <IntroMobile/>
+          <IntroMobile /* onDownload={onDownload} *//>
           <CryptoMobile/>
           <FeaturesMobile/>
         </main>
         <FooterMobile/>
       </div>
+      <DownloadDialog visible={dlVisible} onClose={onClose} />
     </I18nextProvider>
   );
 }

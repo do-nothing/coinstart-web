@@ -16,7 +16,7 @@ html, body {
   min-width: 100vw;
   min-height: 125vh;
   background: var(--bg-color);
-  font-family:"Montserrat" ;
+  font-family: Montserrat Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .mobile {
@@ -517,7 +517,7 @@ html, body {
     overflow-x: hidden;
 
     .intro-gowallet {
-      width: 350px;
+      width: 66.7vw;
       background: var(--primary-color) no-repeat center;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' width='24' height='24' viewBox='0 0 24 24'%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Crect x='24' width='24' height='24' rx='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg style='mix-blend-mode:passthrough' transform='rotate(90 24 0)' clip-path='url(%23a)'%3E%3Cpath d='M35.293 4.293a1 1 0 0 1 1.414 0l7 7a1 1 0 0 1-1.414 1.414L37 7.414V19a1 1 0 1 1-2 0V7.414l-5.293 5.293a1 1 0 0 1-1.414-1.414l7-7z' fill-rule='evenodd' fill='%23FFF'/%3E%3C/g%3E%3C/svg%3E");
       background-position-x: 19rem;
@@ -641,16 +641,18 @@ html, body {
 
         .icon-hand {
           width: 100%;
-          height: 520px;
+          transform: translateX(23px);
         }
 
+        $slide-width: 39.5vw;
+        $slide-hight: 38vh;
+
         .icon-mobile {
-          width: 0%;
-          height: 360px;
           position: absolute;
-          top: 6%;
-          left: 28.5%;
-          //animation: slide-mobile 4s infinite;
+          width: $slide-width;
+          height: $slide-hight;
+          top: 9.2%;
+          left: 30.5%;
         }
         #mockup-mobile-1{
           animation: slide-mobile 15s infinite;
@@ -663,21 +665,22 @@ html, body {
           animation: slide-mobile 15s infinite;
           animation-delay: 10s;
         }
+
         @keyframes slide-mobile {
           0% {
             width: 0%;
             opacity: 1;
           }
           2% {
-            width: 44%;
+            width: $slide-width;
             opacity: 1;
           }
           33% {
-            width: 44%;
+            width: $slide-width;
             opacity: 1;
           }
           33.1% {
-            width: 44%;
+            width: $slide-width;
             opacity: 0;
           }
           100% {
@@ -737,7 +740,7 @@ html, body {
           line-height: 18px;
           margin-top: 10px;
           font-size: 14px;
-          margin-bottom: 80px;
+          margin-bottom: 6vh;
 
 
           .description-item {
@@ -754,23 +757,30 @@ html, body {
           }
         }
 
-        .install-button {
-          border-radius: 100px;
-          background: var(--primary-color);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          font-size: 17px;
-          color: var(--text-color);
-          padding: 15px 0;
-          margin: 10px 0;
+        // .install-button {
+        //   border-radius: 100px;
+        //   background: var(--primary-color);
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   position: relative;
+        //   font-size: 17px;
+        //   color: var(--text-color);
+        //   padding: 15px 0;
+        //   margin: 10px 0;
 
-          img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-          }
+        //   img {
+        //     width: 24px;
+        //     height: 24px;
+        //     margin-right: 10px;
+        //   }
+        // }
+        .home-intro-btns { text-align: center; }
+        .csm-btn {
+          margin: 0 auto;
+          &.btn-top-down-l { width: 75vw; height: 15vw; margin-bottom: 4vw; }
+          &.btn-top-down-s { width: 36vw; height: 15vw; display: inline-flex; margin-right: 4vw; }
+          &.btn-top-down-s:last-child { margin-right: 0; }
         }
 
         #title {
