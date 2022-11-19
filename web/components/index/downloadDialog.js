@@ -36,8 +36,6 @@ export default function DownloadDialog(props) {
   const { visible, onClose } = props;
   const { t, i18n } = useTranslation('common');
 
-  console.log(i18n.language)
-
   const { appInfos } = useAppVersions()
   const [ active, setActive ] = useState('android')
 
@@ -48,8 +46,6 @@ export default function DownloadDialog(props) {
     }
   }, [])
 
-  // const activedIndex = appInfos.findIndex(app => app.type === active)
-  // position: absolute;
 
   return (
     <Modal visible={visible} onClose={onClose}>

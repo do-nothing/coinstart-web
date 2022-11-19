@@ -1,20 +1,19 @@
 import { useTranslation } from 'react-i18next';
 
-const serial = Array.from({length: 9}, (_, i) => i + 1);
+// [0, 1, 2, .... , 9]
+const serial = Array.from({ length: 10 }, (_, i) => i)
 
 export default function IntroSection(props) {
   const { onDownload } = props
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
 
-  const descList = serial.map(n => {
+  const descList = serial.reduce((arr, n) => {
     const key = `intro.desc${n}`; // features.feature1b'
-    const res = t(key);
-    if (res !== key) {
-      return res;
+    if (i18n.exists(key, { ns: 'common' })) {
+      arr.push(t(key))
     }
-
-    return undefined;
-  }).filter(e => e);
+    return arr
+  }, [])
 
   return (
     <>
