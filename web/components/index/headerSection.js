@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import {useTranslation} from 'react-i18next';
-import {useLocalStorageState} from 'ahooks';
+import {useLocalStorageState } from 'ahooks';
 
-export default function HeaderSection(){
+export default function HeaderSection(props){
   const [/* locale */, setLocale] = useLocalStorageState('defiport_locale', {defaultValue: 'en'});
   const {t, i18n} = useTranslation('common');
 
@@ -31,8 +31,8 @@ export default function HeaderSection(){
         <link rel="apple-touch-icon" sizes="152x152" href="/ico/mstile-150x150.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/ico/android-chrome-192x192.png" />
 
-        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=optional" type="font/woff2" crossOrigin="anonymous"/>
-
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Roboto:400,700&family=Inter:400,700&display=optional" type="font/woff2" crossOrigin="anonymous"/>
+        Inter
         <title>CoinStart</title>
         <meta name="description" content="Your Portal to crypto world, safe & easy for you to store, buy, send, receive, swap tokens and collect NFTs." key="desc" />
         <meta property="og:type" content="website" />
@@ -90,18 +90,23 @@ export default function HeaderSection(){
         </nav>
 
         <div className="flex-1"></div>
+
+        <div className="nav-btns">
+          {/* <img src="/icon-twitter.png" alt="" width="22" height="22" />
+          <img src="/icon-discord.png" alt="" width="22" height="22" />
+          <img src="/icon-telegram.png" alt="" width="22" height="22" /> */}
+          <a className="cst-button btn-nav" href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh" target="_blank" rel="noreferrer">{t('Connect Wallet')}</a>
+          <button className="cst-button btn-nav" onClick={props.onDownload}>{t('Download')} <img src="/icon-download.png" alt="icon-download" width="14" height="14" /></button>
+          {/* <div className="download-wrapper">
+            {t('header.Download')}
+            
+          </div> */}
+        </div>
+
         {/* <a href="https://chrome.google.com/webstore/detail/coinstart-wallet/iagkjnocbkjeohadeimlkaofjpilhpfh" target="_blank" rel="noreferrer">
           <button>{t('header.connect')}</button>
         </a> */}
-        <a href="#" className="icon-button">
-          <img src="/icon-twitter.png" alt="" />
-          <img src="/icon-discord.png" alt="" />
-          <img src="/icon-telegram.png" alt="" />
-          <div className="download-wrapper">
-            {t('header.Download')}
-            <img src="/icon-download.png" alt="icon-download" />
-          </div>
-        </a>
+
         <div className="dropdown">
           <img src="/icon-translate.png" alt="icon-translate" id="translate-button" />
           <div className="dropdown-content">
