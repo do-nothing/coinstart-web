@@ -16,7 +16,7 @@ import rus from '../locales/rus';
 import ch from '../locales/ch';
 import jp from '../locales/jp';
 import hk from '../locales/hk';
-import * as appDownPack from '../locales/appDownPack'
+import * as appDownPack from '../locales/appDownPack';
 import {I18nextProvider} from 'react-i18next';
 import i18next from 'i18next';
 import { useCallback, useEffect, useState } from 'react';
@@ -59,19 +59,19 @@ i18next.init({
 });
 
 export default function Home() {
-  const [dlVisible, setDlVisible] = useState(false)
+  const [dlVisible, setDlVisible] = useState(false);
   const [localLocale] = useLocalStorageState('defiport_locale', {defaultValue: 'en'});
   useEffect(() => {
-    i18next.changeLanguage(localLocale)
-  }, [localLocale])
+    i18next.changeLanguage(localLocale);
+  }, [localLocale]);
 
   const onDownload = useCallback(() => {
-    setDlVisible(true)
-  }, [setDlVisible])
+    setDlVisible(true);
+  }, [setDlVisible]);
 
   const onClose = useCallback(() => {
-    setDlVisible(false)
-  }, [setDlVisible])
+    setDlVisible(false);
+  }, [setDlVisible]);
 
   return (
     <I18nextProvider i18n={i18next}>

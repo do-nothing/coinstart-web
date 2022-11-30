@@ -1,4 +1,5 @@
-const path = require("path");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
 
 module.exports = {
   output: 'standalone',
@@ -8,7 +9,7 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   webpack: (config) => {
-    config.resolve.alias["@"] = path.resolve(__dirname)
-    return config
+    config.resolve.alias['@'] = path.resolve(__dirname);
+    return config;
   }
 };

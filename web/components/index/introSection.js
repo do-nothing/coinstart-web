@@ -1,19 +1,23 @@
 import { useTranslation } from 'react-i18next';
+import { useShare } from '@/serv/useShare';
+
 
 // [0, 1, 2, .... , 9]
-const serial = Array.from({ length: 10 }, (_, i) => i)
+const serial = Array.from({ length: 10 }, (_, i) => i);
 
 export default function IntroSection(props) {
-  const { onDownload } = props
+  const { onDownload } = props;
   const { t, i18n } = useTranslation('common');
 
   const descList = serial.reduce((arr, n) => {
     const key = `intro.desc${n}`; // features.feature1b'
     if (i18n.exists(key, { ns: 'common' })) {
-      arr.push(t(key))
+      arr.push(t(key));
     }
-    return arr
-  }, [])
+    return arr;
+  }, []);
+
+  const { metaShare } = useShare();
 
   return (
     <>
@@ -53,6 +57,11 @@ export default function IntroSection(props) {
           <a href="https://discord.gg/75m2wmNKPZ" target="_blank" rel="noreferrer">
             <img src="/icon-discord.png" alt="icon-discord"  />
           </a>
+          <a href="#" target="_blank" rel="noreferrer" onClick={metaShare}>
+            <img src="/icon-facebook.png" alt="share facebook"  />
+          </a>
+
+          
         </div>
         {/* <img className="icon-hand" src="/icon-hand.png" alt="icon-hand"  /> */}
         <img className="icon-hand" src="/home/intro-uishow-0.png" alt="coinstart"  />
