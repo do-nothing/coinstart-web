@@ -78,12 +78,6 @@ export default function DownloadDialog(props) {
                     <img src={`/home/dl-tile-${type}.png`} alt={t('CoinStart App', { ns: `dl-${app.type}` })} />
                   </a>
                 ))}
-                {app.qrcode && (
-                  <div className='dl-apps-page-scan'>
-                    <img src={app.qrcode} />
-                    <p>{t('scan plz', { ns: 'dl-android' })}</p>
-                  </div>
-                )}
               </>
             </AppInfo>
           ))}
