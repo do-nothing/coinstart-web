@@ -12,7 +12,7 @@ export default {
     desc1: 'Safe storage of crypto currencies - Protect your assets on the go with the convenience you expect.',
     desc2: '70+ main nets supported for you to explore NFT, DeFi, DAO...',
     desc3: 'Web3 DApps Marketplace, Discover  10,000+ Web3 Dapps, navigate with ease in one minute',
-    desc4: 'SocialFi-based S IM, private chat, encrypted group chat, and non-encrypted group chat. ',
+    desc4: 'SocialFi-based SIM, private chat, encrypted group chat, and non-encrypted group chat. ',
     title2: 'All You Need is A Set of Account System (Start ID) ',
     subtitle2: 'With a set of Start ID created by mnemonic phrases, you can manage numerous tokens across 70+ mainnets.',
     subtitle3: 'Coinsstart  adopts an original and unique encryption algorithm to protect your assets'
@@ -29,6 +29,6 @@ export default {
     feature4b: 'Support SUI and Aptos dynamic on-chain assets exchange from gaming to finance.',
     feature5a: 'CoinStart GameFi Platform and NFT Exchange trading Function',
     feature5b: 'A platform that allows users to play different casual games under one roof.',
-    feature5c: 'Ａ vertical NFT trading platform for games will be established on Sui. Provide a place for gamers on Sui to trade NFT about Such as game props. ',
+    feature5c: 'A vertical NFT trading platform for games will be established on Sui. Provide a place for gamers on Sui to trade NFT about Such as game props. ',
   },
 };

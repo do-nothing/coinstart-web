@@ -1,17 +1,17 @@
-import { useState, useEffect, useReducer } from 'react'
+import { useState, useEffect } from 'react';
 
 // import v from '@/conf/versions'
 
 export function useAppVersions() {
-  const [infos, setInfos] = useState([])
+  const [infos, setInfos] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const vers = await import('@/conf/versions')
+      const vers = await import('@/conf/versions');
 
       const { apps, serial, urls } = vers['default'];
       const appInfos = serial.map(appType => {
-        const app = apps[appType]
+        const app = apps[appType];
         return ({
           type: appType,
           size: app.size,
@@ -23,12 +23,12 @@ export function useAppVersions() {
             type: u, url: urls[u]
           }))
         });
-      })
+      });
   
-      setInfos(appInfos)
+      setInfos(appInfos);
     }
     fetchData();
-  }, [])
+  }, []);
 
-  return { appInfos: infos }
+  return { appInfos: infos };
 }
