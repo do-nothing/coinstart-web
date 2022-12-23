@@ -85,7 +85,7 @@ export default function HeaderSection(props){
           <a href="#">SWAP</a>
           <a href="#">Gamefi</a>
           <a href="#">Dapp</a>
-          <a href="#">Institude</a>
+          <a href="#">Institutions</a>
           <a href="#">Adapter</a>
         </nav>
 

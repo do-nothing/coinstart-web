@@ -93,7 +93,7 @@ export default function HeaderMobile() {
               <li><a href="#">SWAP</a></li>
               <li><a href="#">Gamefi</a></li>
               <li><a href="#">Dapp</a></li>
-              <li><a href="#">Institude</a></li>
+              <li><a href="#">Institutions</a></li>
               <li><a href="#">OPEN</a></li>
               <li><a href="https://coinstart.io/walletmobile/">{t('header.connect')}</a></li>
             </ul>
